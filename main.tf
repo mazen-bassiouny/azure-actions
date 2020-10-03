@@ -6,8 +6,8 @@ provider "azurerm" {
   tenant_id       = "${var.tenant_id}"
 }
 
-resource "azurerm_resource_group" "DevRG" {
-  name     = "Dev10"
+resource "azurerm_resource_group" "DevRG1" {
+  name     = "Dev11"
   location = "westeurope"
 
   tags = {
@@ -18,8 +18,8 @@ resource "azurerm_resource_group" "DevRG" {
 
 resource "azurerm_container_group" "example" {
   name                = "test-container-group"
-  location            = azurerm_resource_group.DevRG.location
-  resource_group_name = azurerm_resource_group.DevRG.name
+  location            = azurerm_resource_group.DevRG1.location
+  resource_group_name = azurerm_resource_group.DevRG1.name
   ip_address_type     = "public"
   dns_name_label      = "aci-label"
   os_type             = "Linux"
