@@ -21,7 +21,7 @@ resource "azurerm_container_group" "example" {
   location            = azurerm_resource_group.DevRG1.location
   resource_group_name = azurerm_resource_group.DevRG1.name
   ip_address_type     = "public"
-  dns_name_label      = "aci-label"
+  dns_name_label      = "aci-labelll1234567"
   os_type             = "Linux"
 
   container {
