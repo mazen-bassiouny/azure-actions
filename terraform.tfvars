@@ -1,0 +1,3 @@
+sub ="70622828-12e4-4d72-93df-188aaf22b371"
+client_id = "465642c5-497d-4378-9de4-62872af9c28e"
+tenant_id = "ff94bd31-3b12-4da6-b9f7-e564ad508fb3"
